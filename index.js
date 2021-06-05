@@ -16,7 +16,7 @@ app.use("/link", link)
 
 app.get("/", (req, res) => {
 
-    return res.sendFile(path.join(__dirname,"pages/home.html"))
+    return res.sendFile(path.join(__dirname,"pages/end.html"))
 })
 
 app.get("/admin/home", (req, res) => {

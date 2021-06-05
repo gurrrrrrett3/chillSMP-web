@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("May 28, 2021 16:00:00 EST").getTime();
+var countDownDate = new Date("June 15, 2021 16:00:00 EST").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -25,9 +25,9 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);S
-    document.getElementById("d").innerHTML = "0"
-    document.getElementById("h").innerHTML =" 0"
-    document.getElementById("m").innerHTML = "0"
-    document.getElementById("s").innerHTML ="0"
+    document.getElementById("d").innerHTML = ""
+    document.getElementById("h").innerHTML = ""
+    document.getElementById("m").innerHTML = ""
+    document.getElementById("s").innerHTML = ""
   }
 }, 1000);
