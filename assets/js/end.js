@@ -50,11 +50,11 @@ var x = setInterval(function() {
 
 
 if (localStorage.getItem("reloads") == undefined) {
-  localStorage.setItem("reloads", 0)
+  localStorage.setItem("reloads", "")
 } else {
-  localStorage.setItem("reloads", Number.parseInt(localStorage.getItem("reloads") + 1))
+  localStorage.setItem("reloads", localStorage.getItem("reloads") + ".")
 
-  if (Number.parseInt(localStorage.getItem("reloads").length > 15)) {
+  if (localStorage.getItem("reloads").length > 15) {
     alert("Hey! You found me! Let Gucci know and he'll let you in on the secret!")
   }
 }
