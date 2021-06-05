@@ -54,7 +54,7 @@ if (localStorage.getItem("reloads") == undefined) {
 } else {
   localStorage.setItem("reloads", Number.parseInt(localStorage.getItem("reloads") + 1))
 
-  if (Number.parseInt(localStorage.getItem("reloads") > 15)) {
+  if (Number.parseInt(localStorage.getItem("reloads").length > 15)) {
     alert("Hey! You found me! Let Gucci know and he'll let you in on the secret!")
   }
 }
