@@ -24,8 +24,7 @@ var x = setInterval(function() {
 
   // If the count down is finished, write some text
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("clock").innerHTML = "The Server is up!";
+    clearInterval(x);S
     document.getElementById("d").innerHTML = "0"
     document.getElementById("h").innerHTML =" 0"
     document.getElementById("m").innerHTML = "0"
