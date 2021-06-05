@@ -47,3 +47,14 @@ var x = setInterval(function() {
     document.getElementById("s").innerHTML = ""
   }
 }, 1000);
+
+
+if (localStorage.getItem("reloads") == undefined) {
+  localStorage.setItem("reloads", 0)
+} else {
+  localStorage.setItem("reloads", Number.parseInt(localStorage.getItem("reloads") + 1))
+
+  if (Number.parseInt(localStorage.getItem("reloads") > 15)) {
+    alert("Hey! You found me! Let Gucci know and he'll let you in on the secret!")
+  }
+}
