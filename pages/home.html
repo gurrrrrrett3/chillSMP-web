@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <head>
     <title>Chill Friends SMP | Home</title>
-    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="header">
-        <a class="logo" href="/"><img src="/static/images/logo.png" width="48" height="48"> <h1>The Chill SMP</h1> </a>
-        <div class="header-right">
-          <a class="active" href="/">Home</a>
-          <a href="/link/map">Live Map</a>
-        </div>
-      </div>
+  <img style="filter: blur(7px);width: 100%; height: 100%; position: absolute; z-index: -100;" src="/static/images/bg.png">
+  <ul class="nav nav-tabs">
 
-      <div class="des">
-          <h2>
-              A "chill" Whitelisted SMP on Minecraft 1.16.5
-          </h2>
-      </div>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#home">Chill SMP</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#map" onclick="smoothScroll();">Live Map</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#plan" onclick="smoothScroll()">Statistics</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" id="cs" onmouseover="document.getElementById('cs').innerText = 'Coming Soon!'" onmouseout="document.getElementById('cs').innerText = 'Crafting'">Crafting</a>
+    </li>
+  </ul>
+  <div id="myTabContent" class="tab-content" style="position: absolute; height: 100%; width: 100%; ">
+    <div class="tab-pane fade show active" id="home">
+      <h4 style="width: 100%; text-align: center; font-weight: lighter;">A "chill" Whitelisted SMP on Minecraft 1.16.5</h4>
+
+
+      
+
+      <iframe src="https://discord.com/widget?id=841141675836833823&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="display: block; margin-left: auto; margin-right: auto;""></iframe>
+    </div>
+    <div class="tab-pane fade" id="map" style="position: absolute; height: 100%; width: 100%;">
+      <iframe width="100%" src="http://68.40.118.125:8123/" style="height: 100%;"></iframe>
+    </div>
+    <div class="tab-pane fade" id="plan" style="position: absolute; height: 100%; width: 100%;">
+      <iframe width="100%" src="http://68.40.118.125:8804/" style="height: 100%;"></iframe>
+    </div>
+  </div>
+<!--
 <div class="row">
       <div class="col">
-        <iframe src="https://discord.com/widget?id=841141675836833823&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+       
       </div>
       <div class="col">
           <h3>End Portal opens in:</h3>
@@ -61,7 +81,7 @@
         <a onclick="document.getElementById('id01').style.display='block'">Admin Login</a>
     </footer>
     
-      
+      -->
         <!-- The Modal -->
 <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'"
@@ -101,3 +121,10 @@
     }
     </script>
 </body>
+
+
+
+
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+<script src="/static/js/custom.js"></script>
