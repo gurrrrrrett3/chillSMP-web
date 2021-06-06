@@ -85,3 +85,6 @@
     document.body.style.overflow = 'hidden'
   }
 
+
+
+  window.scroll({top: 0, behavior: 'smooth'})
