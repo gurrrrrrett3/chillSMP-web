@@ -2,9 +2,10 @@
 <head>
     <title>Chill Friends SMP | Home</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="icon" href="/satic/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <img style="filter: blur(7px);width: 100%; height: 100%; position: absolute; z-index: -100;" src="/static/images/bg.png">
+  <img style="filter: blur(7px);width: 100%; height: 100%; position: fixed; z-index: -100;" src="/static/images/bg.png">
   <ul class="nav nav-tabs">
 
     <li class="nav-item">
@@ -17,7 +18,22 @@
       <a class="nav-link" data-bs-toggle="tab" href="#plan" onclick="smoothScroll()">Statistics</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" href="#" id="cs" onmouseover="document.getElementById('cs').innerText = 'Coming Soon!'" onmouseout="document.getElementById('cs').innerText = 'Crafting'">Crafting</a>
+      <a class="nav-link disabled" href="#">Crafting</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Builds</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Bug Reports</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Feature Requests</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#polls">Polls</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Credits</a>
     </li>
   </ul>
   <div id="myTabContent" class="tab-content" style="position: absolute; height: 100%; width: 100%; ">
@@ -34,6 +50,9 @@
     </div>
     <div class="tab-pane fade" id="plan" style="position: absolute; height: 100%; width: 100%;">
       <iframe width="100%" src="http://68.40.118.125:8804/" style="height: 100%;"></iframe>
+    </div>
+    <div class="tab-pane fade" id="polls" style="position: absolute; height: 100%; width: 100%;">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclF4-aFYwL968l24MMfYWUTl4MMB0cDJDRzH-7T0c7kVKsig/viewform?embedded=true" width="640" height="1034" frameborder="0" marginheight="0" marginwidth="0" style="display: block; margin-left: auto; margin-right: auto;">Loading…</iframe>
     </div>
   </div>
 <!--
