@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     return res.sendFile(path.join(__dirname,"pages/home.html"))
 })
 
-app.get("/secret/ff05d", (req, res) => {
+app.get("/secret/off0faa", (req, res) => {
 
 res.send("686 41 -1065n")
 
