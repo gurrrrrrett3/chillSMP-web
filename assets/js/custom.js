@@ -105,8 +105,6 @@ window.addEventListener("mousemove", (e) => {
     window.scroll({ top: 42, behavior: "smooth" });
   }
 });
-console.log("-67 256 -373n");
-localStorage.setItem("nextCoords", "-2310 68 1234");
 
 var keys = [];
 
@@ -117,8 +115,8 @@ window.addEventListener("keydown", (e) => {
     keys.push("c");
   } else {
     keys.push(key);
-    if (keys.join("") == "chillsmprokz") {
-      alert("2055 55 4850");
+    if (keys.join("") == "secretpasscode") {
+      alert("nothing here, but maybe soon");
     }
   }
 });
@@ -129,19 +127,16 @@ if (localStorage.getItem("reloads") == undefined) {
   localStorage.setItem("reloads", localStorage.getItem("reloads") + ".");
 
   if (localStorage.getItem("reloads").length > 15) {
-    document.getElementById("title").innerText =
-      "-2442 65 -467, Good luck! This one is difficult!";
+    document.getElementById("title").innerText = "Near -3153 72 -550, check the lava";
   } else if (localStorage.getItem("reloads").length > 17) {
     localStorage.setItem("reloads", "");
   }
 }
 
+
 const cheatcode = document.getElementById("cheatcode");
 
 cheatcode.addEventListener("keyup", (e) => {
   const input = cheatcode.value;
-
-  if (input == "FFAXB") {
-    alert("Near -4380 35 4293, in the chest under the torch");
-  }
 });
+
