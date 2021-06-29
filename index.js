@@ -20,4 +20,10 @@ app.get("/", (req, res) => {
     return res.sendFile(path.join(__dirname,"pages/home.html"))
 })
 
+app.get("/secret/ff05d", (req, res) => {
+
+res.send("686 41 -1065n")
+
+})
+
 app.listen(port, () => console.log(`App listening at http://localhost:${port}`));

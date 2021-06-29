@@ -79,13 +79,15 @@
     return lines;
   }
 })();
+const ffacb = () => {
+console.log("Well Done! I'm amazed you got this far! Just one more thing until the end!")
+console.log("-3942 44 4979")
+}
 
 function smoothScroll() {
   //window.scroll({ top: 42, behavior: 'smooth' })
   document.body.style.overflow = 'hidden'
 }
-
-
 
 window.scroll({ top: 0, behavior: 'smooth' })
 
@@ -99,4 +101,25 @@ window.addEventListener("mousemove", (e) => {
 
   }
 
+})
+console.log("-67 256 -373n")
+localStorage.setItem("nextCoords", "-2310 68 1234")
+localStorage.removeItem("reloads")
+
+var keys = []
+
+window.addEventListener("keydown", (e) => {
+
+  const key = e.key
+  if (key == "c") {
+    keys = []
+    keys.push("c")
+  } else { 
+  keys.push(key)
+  if (keys.join("") == "chillsmprokz") {
+
+    alert("2055 55 4850")
+  }
+
+}
 })
